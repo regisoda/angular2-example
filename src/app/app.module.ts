@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders } from './app.routing';
 
-import { HomePageComponent } from './pages/home-page/home-page.component';
+import { AppRootComponent } from './components/approot/approot.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeadbarComponent } from './components/shared/headbar/headbar.component';
 import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
@@ -13,7 +13,7 @@ import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngsw
 
 @NgModule({
   declarations: [
-    HomePageComponent,
+    AppRootComponent,
     HomeComponent,
     HeadbarComponent,
     WeatherDetailsComponent,
@@ -27,6 +27,6 @@ import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngsw
     routing
   ],
   providers: [],
-  bootstrap: [HomePageComponent]
+  bootstrap: [AppRootComponent]
 })
 export class AppModule { }

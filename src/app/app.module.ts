@@ -10,6 +10,7 @@ import { HeadbarComponent } from './components/shared/headbar/headbar.component'
 import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directive.component';
 import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';
+import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngsw
     HeadbarComponent,
     WeatherDetailsComponent,
     NgifDirectiveComponent,
-    NgswitchDirectiveComponent
+    NgswitchDirectiveComponent,
+    NgstyleDirectiveComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,48 @@
+<div id="pnl" class="panel panel-primary">
+
+	<div class="panel-heading">
+		<h3 class="panel-title">*ngStyle directive</h3>
+	</div>
+
+	<div class="panel-body">
+
+		<br>
+		<div>
+			<h4>Exemplo 1 (property binding): </h4>
+			<span 
+        [style.backgroundColor]="b ? 'black' : 'white'" 
+        [style.color]="b ? 'white' : 'black'" 
+        [style.fontWeight]="b ? 'bold' : 'normal'"
+				[style.fontSize]="fontSize + 'px'">
+       loausdfoas fasdf asfldkjas dfksdlkfjla
+    </span>
+		</div>
+
+		<div>
+			<h4>Exemplo 2 (ngStyle): </h4>
+			<span 
+        [ngStyle]=
+          "{
+            'backgroundColor': (b ? 'black' : 'white'),
+            'color': (b ? 'white' : 'black'),
+            'fontWeight': (b ? 'bold' : 'normal'),
+            'fontSize': fontSize + 'px'
+           }">
+       loausdfoas fasdf asfldkjas dfksdlkfjla
+    </span>
+		</div>
+
+		<br>
+
+		<input type="number" min="4" max="48" [(ngModel)]="fontSize">
+
+
+		<br>
+		<br>
+		<button class="btn btn-primary" (click)="onClickBtn()">
+      Alternar Style
+    </button>
+
+	</div>
+
+</div>

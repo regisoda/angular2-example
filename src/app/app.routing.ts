@@ -5,14 +5,14 @@ import { HomeComponent } from './components/home/home.component';
 import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directive.component';
 import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';
-// import { CourseDetailsComponent } from './components/course-details/course-details.component';
+import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'weatherservice', component: WeatherDetailsComponent },
     { path: 'ngifdirective', component: NgifDirectiveComponent },
     { path: 'ngswitchdirective', component: NgswitchDirectiveComponent },
-    // { path: 'courses/details/:tag', component: CourseDetailsComponent }
+    { path: 'ngstyledirective', component: NgstyleDirectiveComponent }
 ];
 
 export const appRoutingProviders: any[] = [

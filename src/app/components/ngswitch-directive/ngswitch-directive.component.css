@@ -1,0 +1,17 @@
+#pnl {
+	margin: 25px;
+}
+
+.area {
+	border: 1px;
+	border-style: dashed;
+}
+
+.tabarea{
+	background-color: lightgray;
+}
+
+li {
+	width:120px;
+	text-align: center;
+}

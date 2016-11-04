@@ -1,3 +1,33 @@
-<p>
-  ngswitch-directive works!
-</p>
+<div id="pnl" class="panel panel-primary">
+
+	<div class="panel-heading">
+		<h3 class="panel-title">*ngSwitch directive</h3>
+	</div>
+
+	<div class="panel-body">
+
+		<br>
+		<div class="area">
+			<ul class="nav nav-tabs tabarea">
+				<li role="presentation" [class.active]="tab == 'TAB1'">
+					<a (click)="tab = 'TAB1'">Tab 1</a>
+				</li>
+				<li role="presentation" [class.active]="tab == 'TAB2'">
+					<a (click)="tab = 'TAB2'">Tab 2</a>
+				</li>
+				<li role="presentation" [class.active]="tab == 'TAB3'">
+					<a (click)="tab = 'TAB3'">Tab 3</a>
+				</li>
+			</ul>
+
+
+			<div class="jumbotron">
+				<div class="container" [ngSwitch]="tab" style="text-align:center">
+					<p *ngSwitchDefault>Tab 1 active</p>
+					<p *ngSwitchCase="'TAB2'">Tab 2 active</p>
+					<p *ngSwitchCase="'TAB3'">Tab 3 active</p>
+				</div>
+			</div>
+		</div>
+
+	</div>

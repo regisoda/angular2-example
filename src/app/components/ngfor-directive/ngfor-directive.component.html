@@ -1,0 +1,12 @@
+<h3>Directive *ngFor</h3>
+
+<ul>
+  <li *ngFor="let nome of nomes, let i = index">
+    {{i+1}} - {{nome}} - Idade: {{idades[i]}} anos
+  </li>
+</ul>
+
+<br>
+<span>
+&nbsp;&nbsp;&nbsp;&nbsp; - Idades: {{idades}}
+</span>

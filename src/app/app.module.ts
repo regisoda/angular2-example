@@ -11,6 +11,7 @@ import { WeatherDetailsComponent } from './components/weather-details/weather-de
 import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directive.component';
 import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';
 import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
+import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyl
     WeatherDetailsComponent,
     NgifDirectiveComponent,
     NgswitchDirectiveComponent,
-    NgstyleDirectiveComponent
+    NgstyleDirectiveComponent,
+    NgforDirectiveComponent
   ],
   imports: [
     BrowserModule,

@@ -5,24 +5,26 @@ import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders } from './app.routing';
 
 import { AppRootComponent } from './components/approot/approot.component';
-import { HomeComponent } from './components/home/home.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeadbarComponent } from './components/shared/headbar/headbar.component';
 import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directive.component';
 import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';
 import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
 import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
+import { NgcontentDirectiveComponent } from './components/ngcontent-directive/ngcontent-directive.component';
 
 @NgModule({
   declarations: [
     AppRootComponent,
-    HomeComponent,
+    HomePageComponent,
     HeadbarComponent,
     WeatherDetailsComponent,
     NgifDirectiveComponent,
     NgswitchDirectiveComponent,
     NgstyleDirectiveComponent,
-    NgforDirectiveComponent
+    NgforDirectiveComponent,
+    NgcontentDirectiveComponent
   ],
   imports: [
     BrowserModule,

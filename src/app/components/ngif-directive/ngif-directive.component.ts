@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ngif-directive',
-  templateUrl: './ngif-directive.component.html',
-  styleUrls: ['./ngif-directive.component.css']
+  templateUrl: './ngif-directive.component.html'
 })
 export class NgifDirectiveComponent implements OnInit {
 

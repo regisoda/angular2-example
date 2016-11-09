@@ -6,7 +6,7 @@ import { routing, appRoutingProviders } from './app.routing';
 
 import { AppRootComponent } from './components/approot/approot.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { HeadbarComponent } from './components/shared/headbar/headbar.component';
+import { HeadbarComponent } from './pages/shared/headbar-page/headbar.component';
 import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directive.component';
 import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';

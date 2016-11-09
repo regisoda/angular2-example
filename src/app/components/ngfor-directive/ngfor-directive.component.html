@@ -7,6 +7,28 @@
 </ul>
 
 <br>
-<span>
-&nbsp;&nbsp;&nbsp;&nbsp; - Idades: {{idades}}
-</span>
+<span class="pl-20">- Idades: {{idades}}</span>
+
+<br>
+
+
+<span class="pl-20">- Responsável:</span>
+<ul>
+  <li>Nome: {{responsavel.nome}}</li>
+  <li>CPF: {{responsavel?.cpf}}</li>
+  <li>Profissão:
+    <ul>
+      <li> Nome: {{responsavel.profissao.descricao}}</li>
+      <li [hidden]="!responsavel.profissao.cargo">Cargo: {{responsavel.profissao.cargo}}</li>
+      <li [hidden]="!responsavel.profissao.admissao">Ano de admissão: {{responsavel.profissao.admissao}}</li>
+      <li> Salário: {{responsavel.profissao.salario | number: '1.2-2'}}</li>
+      <!--<li> Salário: {{responsavel.profissao.salario | currency : 'USD' : 2}}</li>-->
+      <li> Próxima férias: {{responsavel.profissao.ferias?.proxima}}</li>
+      <li> Última férias: {{responsavel.profissao.ferias?.ultima}}</li>
+    </ul>
+  </li>
+</ul>
+
+
+
+<br> {{responsavel|json}}

@@ -1,0 +1,45 @@
+<section>
+  <article>
+    <h3>Class and Style binding</h3>
+    <div>
+      Select class:
+      <select #classe (change)="0" [style.width]="'150px'">
+           <option value="alert-success">Success</option>
+           <option value="alert-info">Info</option>
+           <option value="alert-warning">Warning</option>
+           <option value="alert-danger">Danger</option>
+       </select>
+      <br><br>
+
+      <div class="alert {{ classe.value }}" role="alert">
+        Color according to combobox value.
+      </div>
+
+      <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">
+        Success
+      </div>
+
+      <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">
+        Info
+      </div>
+
+      <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">
+        Warning
+      </div>
+
+      <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">
+        Danger
+      </div>
+
+      <div class="alert alert-danger" role="alert" 
+        [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'"
+        [style.font-size]="isSpecial ? 'x-large' : 'smaller'">
+        This text only appears in case of danger.
+        <div class="checkbox" *ngIf="classe.value == 'alert-danger'">
+          <label><input type="checkbox" value="false" [(ngModel)]="isSpecial">Font Size special</label>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</section>

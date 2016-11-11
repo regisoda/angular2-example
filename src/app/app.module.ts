@@ -13,6 +13,7 @@ import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngsw
 import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
 import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
 import { NgcontentDirectiveComponent } from './components/ngcontent-directive/ngcontent-directive.component';
+import { DataBindingComponent } from './components/data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgcontentDirectiveComponent } from './components/ngcontent-directive/ng
     NgswitchDirectiveComponent,
     NgstyleDirectiveComponent,
     NgforDirectiveComponent,
-    NgcontentDirectiveComponent
+    NgcontentDirectiveComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,

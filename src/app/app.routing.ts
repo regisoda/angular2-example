@@ -7,14 +7,16 @@ import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directi
 import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';
 import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
 import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
+import { DataBindingComponent } from './components/data-binding/data-binding.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent },
-    { path: 'weatherservice', component: WeatherDetailsComponent },
+    { path: 'databinding', component: DataBindingComponent },
     { path: 'ngifdirective', component: NgifDirectiveComponent },
     { path: 'ngfordirective', component: NgforDirectiveComponent },
     { path: 'ngswitchdirective', component: NgswitchDirectiveComponent },
-    { path: 'ngstyledirective', component: NgstyleDirectiveComponent }
+    { path: 'ngstyledirective', component: NgstyleDirectiveComponent },
+    { path: 'weatherservice', component: WeatherDetailsComponent },
 ];
 
 export const appRoutingProviders: any[] = [

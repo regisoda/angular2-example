@@ -1,0 +1,36 @@
+<section>
+
+
+  <p> Documentation: <a href="{{url}}" target="_blank">{{url}}</a></p>
+
+  <article>
+    <h3>One Way</h3>
+
+    <span [innerHTML]="explanation"></span>
+
+    <p>Examples:</p>
+    <ul>
+      <li>Interpolation: {{nome}}</li>
+      <li>Expression 1: {{1 + 1}}</li>
+      <li>Expression 2: {{1 + 1 + getNumber()}}</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Example - Property Binding</h3>
+    <div>
+      <span [style.fontWeight]="'bold'">Method 1:</span>
+      <img src="{{urlImg}}" />
+    </div>
+    <br>
+    <div>
+      <span [style.fontWeight]="'bold'">Method 2:</span>
+      <img [src]="urlImg" />
+    </div>
+    <br>
+    <div>
+      <span [style.fontWeight]="'bold'">Method 3:</span>
+      <img bind-src="urlImg" />
+    </div>
+  </article>
+</section>

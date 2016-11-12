@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders } from './app.routing';
 
-import { AppRootComponent } from './components/approot/approot.component';
+import { AppRootComponent } from './root/root.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeadbarComponent } from './pages/shared/headbar-page/headbar.component';
 import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
@@ -15,6 +15,8 @@ import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyl
 import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
 import { NgcontentDirectiveComponent } from './components/ngcontent-directive/ngcontent-directive.component';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
 
 @NgModule({
@@ -31,6 +33,8 @@ import { ClassStyleBindingComponent } from './components/class-style-binding/cla
     NgcontentDirectiveComponent,
     DataBindingComponent,
     ClassStyleBindingComponent,
+    TwoWayBindingComponent,
+    EventBindingComponent,
   ],
   imports: [
     BrowserModule,

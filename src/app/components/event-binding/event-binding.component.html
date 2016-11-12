@@ -1,0 +1,41 @@
+<section class="event-binding">
+
+  <article>
+    <h3>Event Binding</h3>
+    <span>
+      <p>Sintax:</p>
+      <ul>
+        <li>
+          <b>{{explanation}}</b>
+        </li>
+      </ul>
+    </span>
+  </article>
+
+  <article>
+    <br>
+    <p>Examples:</p>
+
+    <div style="padding-left:20px">
+      <br><br>
+
+      <input type="text" 
+            (keyup)="onKeyup($event)" 
+            (keyup.enter)="onSave(campo.value)" 
+            (blur)="onSave(campo.value)" 
+            #campo 
+       />
+      <br>
+      <div>Current Content: {{ current }}</div>
+      <div>Saved Content: {{ saved }}</div>
+
+      <br><br>
+      <span (mouseover)="onMouseSpan()"
+            (mouseout)="onMouseSpan()"
+            [class.highlight]="isMouseOver">
+            Pass over me!!!
+      </span>
+    </div>
+
+  </article>
+</section>

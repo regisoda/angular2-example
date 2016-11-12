@@ -1,0 +1,66 @@
+<section class="two-way-binding">
+  <article>
+    <h3>Two Way Binding</h3>
+    <span>
+      <p>Sintax:</p>
+      <ul>
+        <li>
+          <b>{{explanation}}</b>
+        </li>
+      </ul>
+    </span>
+  </article>    
+
+  <article>
+    <br>
+    <p>Examples:</p>
+    
+    <div>
+      <div class="input-group">
+        <span class="input-group-addon">Name 1</span>
+        <input type="text" placeholder="Name"  
+            [value]="person.name"
+            (input)="person.name = $event.target.value"
+        />
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon">Name 2</span>
+        <input type="text" placeholder="Name"  
+            [ngModel]="person.name" 
+            (ngModelChange)="person.name = $event"       
+        />
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon">Name 3</span>
+        <input type="text" placeholder="Name"  
+            bindon-ngModel="person.name"    
+        />
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon">Name 4</span>
+        <input type="text" placeholder="Name"  
+            [(ngModel)]="person.name"      
+        />
+      </div>
+
+      <br>
+      <div>
+        <label>Age</label>
+        <input type="text" placeholder="Age"  
+            [(ngModel)]="person.age"      
+        />
+      </div>
+
+      <br>
+      <br>
+
+      <h4 *ngIf="person.name"><span class="label label-primary">Name: {{ person.name }}</span></h4>
+      <h4 *ngIf="person.age"><span class="label label-warning">Age: {{ person.age }}</span></h4>
+
+    </div>
+
+  </article>
+</section>

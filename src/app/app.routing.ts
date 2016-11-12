@@ -9,11 +9,16 @@ import { NgclassDirectiveComponent } from './components/ngclass-directive/ngclas
 import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
 import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
+
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent },
     { path: 'databinding', component: DataBindingComponent }, 
+    { path: 'twowaybinding', component: TwoWayBindingComponent },
+    { path: 'eventbinding', component: EventBindingComponent },
     { path: 'classstylebinding', component: ClassStyleBindingComponent },
     { path: 'ngifdirective', component: NgifDirectiveComponent },
     { path: 'ngfordirective', component: NgforDirectiveComponent },

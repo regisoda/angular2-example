@@ -12,6 +12,7 @@ import { DataBindingComponent } from './components/data-binding/data-binding.com
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
+import { InputPropertyExampleComponent } from './components/input-property-example/input-property-example.component';
 
 
 const appRoutes: Routes = [
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     { path: 'ngswitchdirective', component: NgswitchDirectiveComponent },
     { path: 'ngclassdirective', component: NgclassDirectiveComponent },
     { path: 'ngstyledirective', component: NgstyleDirectiveComponent },
-    { path: 'weatherservice', component: WeatherDetailsComponent },
+    { path: 'inputpropertyexample', component: InputPropertyExampleComponent },
+    // { path: 'weatherservice', component: WeatherDetailsComponent },
 ];
 
 export const appRoutingProviders: any[] = [

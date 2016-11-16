@@ -13,7 +13,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
 import { InputPropertyExampleComponent } from './components/input-property-example/input-property-example.component';
-
+import { OutputPropertyExampleComponent } from './components/output-property-example/output-property-example.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent },
@@ -27,6 +27,7 @@ const appRoutes: Routes = [
     { path: 'ngclassdirective', component: NgclassDirectiveComponent },
     { path: 'ngstyledirective', component: NgstyleDirectiveComponent },
     { path: 'inputpropertyexample', component: InputPropertyExampleComponent },
+    { path: 'outputpropertyexample', component: OutputPropertyExampleComponent },
     // { path: 'weatherservice', component: WeatherDetailsComponent },
 ];
 

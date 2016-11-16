@@ -20,6 +20,8 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
 import { InputPropertyExampleComponent } from './components/input-property-example/input-property-example.component';
 import { InputPropertyInteractionComponent } from './components/input-property-example/input-property-interaction.component';
+import { OutputPropertyExampleComponent } from './components/output-property-example/output-property-example.component';
+import { OutputPropertyInteractionComponent } from './components/output-property-example/output-property-interaction.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { InputPropertyInteractionComponent } from './components/input-property-e
     EventBindingComponent,
     InputPropertyInteractionComponent,
     InputPropertyExampleComponent,
+    OutputPropertyExampleComponent,
+    OutputPropertyInteractionComponent,
   ],
   imports: [
     BrowserModule,

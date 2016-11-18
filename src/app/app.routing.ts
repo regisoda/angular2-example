@@ -14,6 +14,8 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
 import { InputPropertyExampleComponent } from './components/input-property-example/input-property-example.component';
 import { OutputPropertyExampleComponent } from './components/output-property-example/output-property-example.component';
+import { LifeCycleExampleComponent } from './components/life-cycle-example/life-cycle-example.component';
+
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent },
@@ -28,6 +30,7 @@ const appRoutes: Routes = [
     { path: 'ngstyledirective', component: NgstyleDirectiveComponent },
     { path: 'inputpropertyexample', component: InputPropertyExampleComponent },
     { path: 'outputpropertyexample', component: OutputPropertyExampleComponent },
+    { path: 'lifecycleexample', component: LifeCycleExampleComponent },
     // { path: 'weatherservice', component: WeatherDetailsComponent },
 ];
 

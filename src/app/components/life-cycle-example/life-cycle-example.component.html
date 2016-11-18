@@ -1,0 +1,21 @@
+<section class="input-properties">
+
+<p> Documentation: <a href="{{url}}" target="_blank">{{url}}</a></p>
+
+  <article>
+    <h3>Life Cycle Hooks</h3>
+
+      <p>See the console.</p>
+
+      <lifecycle [initialValue]="vlr" *ngIf="remove != true"></lifecycle>
+      
+      <button (click)="vlr = vlr + 1">Inc</button>
+
+      <button (click)="remove = true">Remove tag life cycle</button>
+
+ 
+  </article>
+</section>
+
+
+

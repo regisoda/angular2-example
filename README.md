@@ -2,11 +2,11 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
 
-## Example app
+## Sample app
 
-[Example app](http://rco-angular2.azurewebsites.net/) See the example.
+[Sample app](http://rco-angular2.azurewebsites.net/) See the example.
 
-## Install the example app
+## Install the sample app
 
 npm install
 

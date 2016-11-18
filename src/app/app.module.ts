@@ -22,6 +22,8 @@ import { InputPropertyExampleComponent } from './components/input-property-examp
 import { InputPropertyInteractionComponent } from './components/input-property-example/input-property-interaction.component';
 import { OutputPropertyExampleComponent } from './components/output-property-example/output-property-example.component';
 import { OutputPropertyInteractionComponent } from './components/output-property-example/output-property-interaction.component';
+import { LifeCycleExampleComponent } from './components/life-cycle-example/life-cycle-example.component';
+import { LifeCycleComponent } from './components/life-cycle-example/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { OutputPropertyInteractionComponent } from './components/output-property
     InputPropertyExampleComponent,
     OutputPropertyExampleComponent,
     OutputPropertyInteractionComponent,
+    LifeCycleExampleComponent,
+    LifeCycleComponent,
   ],
   imports: [
     BrowserModule,

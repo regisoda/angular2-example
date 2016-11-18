@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WeatherService } from '../../services/weather.service';
 
 @Component({
-  selector: 'weather-details',
+  selector: 'app-weather-details',
   templateUrl: './weather-details.component.html',
   providers: [WeatherService]
 })
@@ -16,9 +16,8 @@ export class WeatherDetailsComponent implements OnInit {
     this.getWeathers();
   }
 
-  getWeathers(){
+  getWeathers() {
     this.weatherService.getWeather()
       .subscribe(data => console.log(data), error => console.log(error));
   }
-  
 }

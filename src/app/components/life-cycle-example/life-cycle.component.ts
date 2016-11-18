@@ -13,7 +13,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'lifecycle',
+  selector: 'app-lifecycle',
   templateUrl: `
     <p #varX >{{initialValue}}</p>
     <p>{{ varX.textContent }}</p>
@@ -74,12 +74,12 @@ export class LifeCycleComponent implements OnChanges, OnInit,
   }
 
   private logVar() {
-    if (this.varX != undefined) {
+    if (this.varX !== undefined) {
       console.log('Hook ' + this.i + ': [ViewChild] ');
       console.log(this.varX);
+      return;
     }
-    else {
-      console.log('Hook ' + this.i + ': [ViewChild] = [undefined]');
-    }
+
+    console.log('Hook ' + this.i + ': [ViewChild] = [undefined]');
   }
 }

@@ -11,7 +11,7 @@ export class TwoWayBindingComponent implements OnInit {
 
   person = { name: '', age: 38 };
 
-  explanation: string = '<input type="text" [(ngModel)]="person.name"/>';    
+  explanation: string = '<input type="text" [(ngModel)]="person.name"/>';
 
   constructor() { }
 

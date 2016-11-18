@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgswitchDirectiveComponent implements OnInit {
 
-  tab : string = 'TAB1';
-  
+  tab: string = 'TAB1';
   constructor() { }
 
   ngOnInit() {

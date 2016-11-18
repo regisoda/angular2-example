@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 export class OutputPropertyExampleComponent implements OnInit {
 
   initialInputValue: number = 50;
-  inputValue : number = this.initialInputValue;
+  inputValue: number = this.initialInputValue;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onChange(event){
+  onChange(event) {
     // console.log(event.value);
     this.inputValue = event.value;
   }

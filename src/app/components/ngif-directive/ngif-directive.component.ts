@@ -1,19 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngif-directive',
+  selector: 'app-ngif-directive',
   templateUrl: './ngif-directive.component.html'
 })
-export class NgifDirectiveComponent implements OnInit {
+export class NgifDirectiveComponent {
 
-  b : boolean = true;
+  b: boolean = true;
 
-  constructor() { }
- 
-  ngOnInit() {
+  constructor() {
   }
 
-  onClickBtn(){
+  onClickBtn() {
     this.b = !this.b;
   }
 }

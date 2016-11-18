@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'headbar',
+  selector: 'app-headbar',
   templateUrl: './headbar.component.html',
   styleUrls: ['./headbar.component.css']
 })

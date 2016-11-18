@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { routing, appRoutingProviders } from './app.routing';
+import { routing } from './app.routing';
 
 import { AppRootComponent } from './root/root.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';

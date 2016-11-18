@@ -15,8 +15,7 @@ export class NgstyleDirectiveComponent implements OnInit {
   ngOnInit() {
   }
 
- onClickBtn(){
+ onClickBtn() {
    this.b = !this.b;
  }
- 
 }

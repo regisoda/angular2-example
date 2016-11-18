@@ -1,16 +1,19 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'input-property-example',
+  selector: 'app-input-property-interaction',
   template: `
     <p>Name: <b>{{nameStr}}</b> - Last Name: <b>{{lastNameStr}}</b></p>
-  `,
-   inputs: ['lastNameStr:lastName']
+  `
+  // , inputs: ['lastNameStr:lastName']  -- (A) OUTRO METODO
 })
 export class InputPropertyInteractionComponent {
 
-  @Input('name') nameStr: string = '';
-  lastNameStr: string = '';
+  // @Input('name') nameStr: string = '';  -- EH POSSIVEL USAR OUTRA NOME DE VARIAVEL
+  @Input() nameStr: string = '';
+
+  // lastNameStr: string = ''; -- (A) OUTRO METODO
+  @Input() lastNameStr: string = '';
 
   constructor() { }
 

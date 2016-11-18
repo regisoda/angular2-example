@@ -2,7 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
+// import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 import { NgifDirectiveComponent } from './components/ngif-directive/ngif-directive.component';
 import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';
 import { NgclassDirectiveComponent } from './components/ngclass-directive/ngclass-directive.component';
@@ -19,7 +19,7 @@ import { LifeCycleExampleComponent } from './components/life-cycle-example/life-
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent },
-    { path: 'databinding', component: DataBindingComponent }, 
+    { path: 'databinding', component: DataBindingComponent },
     { path: 'twowaybinding', component: TwoWayBindingComponent },
     { path: 'eventbinding', component: EventBindingComponent },
     { path: 'classstylebinding', component: ClassStyleBindingComponent },

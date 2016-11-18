@@ -9,7 +9,7 @@ export class LifeCycleExampleComponent {
   vlr = 15;
   remove = false;
 
-  url : string = "https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html";
+  url: string = 'https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html';
 
   constructor() { }
 }

@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'output-property-example',
+  selector: 'app-output-property-interaction',
   template: `
     <div>
       <button type="button" class="btn btn-primary" (click)="dec()">-</button>

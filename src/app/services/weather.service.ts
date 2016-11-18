@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import "rxjs/Rx";
+import { Http } from '@angular/http';
+import 'rxjs/Rx';
 
 @Injectable()
 export class WeatherService {
@@ -8,13 +8,13 @@ export class WeatherService {
   constructor(private http: Http) { }
 
   getWeather() {
-    return this.http.get('https://api.hgbrasil.com/weather/?format=jsonp&cid=BRXX0232',)
+    return this.http.get('https://api.hgbrasil.com/weather/?format=jsonp&cid=BRXX0232')
       .map(res => res.json())
       .catch(this.handleError);
   }
 
   private handleError(error: any) {
-    console.log("HANDLE ERROR ->");
+    console.log('HANDLE ERROR ->');
     console.error(error); // log to console instead
     return Promise.reject(error);
   }

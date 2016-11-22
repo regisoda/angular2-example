@@ -15,6 +15,8 @@ import { ClassStyleBindingComponent } from './components/class-style-binding/cla
 import { InputPropertyExampleComponent } from './components/input-property-example/input-property-example.component';
 import { OutputPropertyExampleComponent } from './components/output-property-example/output-property-example.component';
 import { LifeCycleExampleComponent } from './components/life-cycle-example/life-cycle-example.component';
+import { CustomDirectivesExampleComponent } from './components/custom-directives-example/custom-directives-example.component';
+
 
 
 const appRoutes: Routes = [
@@ -31,6 +33,7 @@ const appRoutes: Routes = [
     { path: 'inputpropertyexample', component: InputPropertyExampleComponent },
     { path: 'outputpropertyexample', component: OutputPropertyExampleComponent },
     { path: 'lifecycleexample', component: LifeCycleExampleComponent },
+    { path: 'customdirectiveexample', component: CustomDirectivesExampleComponent },
     // { path: 'weatherservice', component: WeatherDetailsComponent },
 ];
 

@@ -24,6 +24,8 @@ import { OutputPropertyExampleComponent } from './components/output-property-exa
 import { OutputPropertyInteractionComponent } from './components/output-property-example/output-property-interaction.component';
 import { LifeCycleExampleComponent } from './components/life-cycle-example/life-cycle-example.component';
 import { LifeCycleComponent } from './components/life-cycle-example/life-cycle.component';
+import { CustomAttributeDirective } from './directives/custom-attribute.directive';
+import { CustomDirectivesExampleComponent } from './components/custom-directives-example/custom-directives-example.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { LifeCycleComponent } from './components/life-cycle-example/life-cycle.c
     OutputPropertyInteractionComponent,
     LifeCycleExampleComponent,
     LifeCycleComponent,
+    CustomDirectivesExampleComponent,
+    CustomAttributeDirective, //directive
   ],
   imports: [
     BrowserModule,

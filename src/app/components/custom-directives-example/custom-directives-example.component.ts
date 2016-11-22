@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 export class CustomDirectivesExampleComponent {
 
   explanation: string = `
-    <p customAttribute> This tag P uses a custom attribute directive that sets a yellow background color. </p>
+    <p customAttributeDirective> This tag P uses a custom attribute directive that sets a yellow background color. </p>
   `;
   constructor() { }
 

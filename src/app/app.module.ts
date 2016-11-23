@@ -26,6 +26,10 @@ import { LifeCycleExampleComponent } from './components/life-cycle-example/life-
 import { LifeCycleComponent } from './components/life-cycle-example/life-cycle.component';
 import { CustomAttributeDirective } from './directives/custom-attribute.directive';
 import { CustomDirectivesExampleComponent } from './components/custom-directives-example/custom-directives-example.component';
+import { HostlistenerHostbindingDirective } from './directives/hostlistener-hostbinding.directive';
+import { HostlistenerHostbindingExampleComponent } from './components/custom-directives-example/hostlistener-hostbinding-example.component';
+import { InputPropertyBindingDirective } from './directives/input-property-binding.directive';
+import { InputPropertyBindingExampleComponent } from './components/custom-directives-example/input-property-binding-example.component';
 
 @NgModule({
   declarations: [
@@ -49,8 +53,12 @@ import { CustomDirectivesExampleComponent } from './components/custom-directives
     OutputPropertyInteractionComponent,
     LifeCycleExampleComponent,
     LifeCycleComponent,
+    CustomAttributeDirective, // directive
     CustomDirectivesExampleComponent,
-    CustomAttributeDirective, //directive
+    HostlistenerHostbindingDirective, // directive
+    HostlistenerHostbindingExampleComponent,
+    InputPropertyBindingDirective, // directive
+    InputPropertyBindingExampleComponent
   ],
   imports: [
     BrowserModule,

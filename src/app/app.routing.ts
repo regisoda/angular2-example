@@ -16,7 +16,8 @@ import { InputPropertyExampleComponent } from './components/input-property-examp
 import { OutputPropertyExampleComponent } from './components/output-property-example/output-property-example.component';
 import { LifeCycleExampleComponent } from './components/life-cycle-example/life-cycle-example.component';
 import { CustomDirectivesExampleComponent } from './components/custom-directives-example/custom-directives-example.component';
-
+import { HostlistenerHostbindingExampleComponent } from './components/custom-directives-example/hostlistener-hostbinding-example.component';
+import { InputPropertyBindingExampleComponent } from './components/custom-directives-example/input-property-binding-example.component';
 
 
 const appRoutes: Routes = [
@@ -34,6 +35,8 @@ const appRoutes: Routes = [
     { path: 'outputpropertyexample', component: OutputPropertyExampleComponent },
     { path: 'lifecycleexample', component: LifeCycleExampleComponent },
     { path: 'customdirectiveexample', component: CustomDirectivesExampleComponent },
+    { path: 'hostlistenerhostbindingexample', component: HostlistenerHostbindingExampleComponent },
+    { path: 'inputpropertybindingexample', component: InputPropertyBindingExampleComponent },
     // { path: 'weatherservice', component: WeatherDetailsComponent },
 ];
 

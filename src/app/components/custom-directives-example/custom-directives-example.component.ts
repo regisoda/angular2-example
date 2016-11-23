@@ -9,7 +9,6 @@ export class CustomDirectivesExampleComponent {
   explanation: string = `
     <p customAttributeDirective> This tag P uses a custom attribute directive that sets a yellow background color. </p>
   `;
+
   constructor() { }
-
-
 }

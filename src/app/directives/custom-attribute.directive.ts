@@ -10,8 +10,8 @@ export class CustomAttributeDirective {
     private _renderer: Renderer
   ) {
 
-    //console.log(this._elementRef);
-    //this._elementRef.nativeElement.style.backgroundColor = 'yellow'; ---> NOT RECOMMENDED
+    // console.log(this._elementRef);
+    // this._elementRef.nativeElement.style.backgroundColor = 'yellow'; ---> NOT RECOMMENDED
 
     this._renderer.setElementStyle(
       this._elementRef.nativeElement,
@@ -19,4 +19,6 @@ export class CustomAttributeDirective {
       'yellow'
     );
   }
+
 }
+

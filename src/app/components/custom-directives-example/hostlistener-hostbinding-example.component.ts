@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class HostlistenerHostbindingExampleComponent implements OnInit {
 
   explanation: string = `
-    <p hostlistenerHostbindingDirective> 
+    <p appHostlistenerHostbinding> 
       This tag P uses a custom directive (Hostlistener / Hostbinding) that sets a yellow background color when mouse over/leave. 
     </p>
   `;

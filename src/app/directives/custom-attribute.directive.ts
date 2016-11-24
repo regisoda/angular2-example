@@ -1,7 +1,8 @@
 import { Directive, ElementRef, Renderer } from '@angular/core';
 
 @Directive({
-  selector: 'p[customAttributeDirective]'
+  // selector: 'p[appCustomAttribute]'  // ONLY TAG <p>
+  selector: '[appCustomAttribute]'
 })
 export class CustomAttributeDirective {
 

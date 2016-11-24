@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class InputPropertyBindingExampleComponent implements OnInit {
 
   explanation: string = `
-    <p [highlight]="'red'" [defaultColor]="'gray'"> 
+    <p [appHighlight]="'red'" [defaultColor]="'gray'"> 
       This tag P uses a custom directive with input property binding that sets a custom background color when mouse over/leave. 
     </p>
   `;

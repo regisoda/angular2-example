@@ -1,0 +1,21 @@
+<section>
+
+  <article>
+    <h3>Structural - Custom Directive</h3>
+
+    <p>
+      Example - Directive Name: <b>appCustomStructural</b>
+    </p>
+
+    <div class="jumbotron" (mouseover)="b=true" (mouseleave)="b=false">
+      <h4 class="text-center">Over Here = {{b}}</h4>
+    </div>
+
+    <div *appCustomStructural="b">
+      <p class="text-center">
+        <b>This content is only displayed when the condition in the structural directive is true.</b>
+      </p>
+    </div>
+
+  </article>
+</section>

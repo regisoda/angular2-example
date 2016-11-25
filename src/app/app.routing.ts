@@ -19,6 +19,7 @@ import { AttributeDirectiveExampleComponent } from './components/custom-directiv
 import { HostlistenerHostbindingExampleComponent } from './components/custom-directives-example/hostlistener-hostbinding-example.component';
 import { InputPropertyBindingExampleComponent } from './components/custom-directives-example/input-property-binding-example.component';
 import { StructuralDirectiveExampleComponent } from './components/custom-directives-example/structural-directive-example.component';
+import { ServicesIntroductionComponent } from './components/services-introduction/services-introduction.component';
 
 
 const appRoutes: Routes = [
@@ -39,6 +40,7 @@ const appRoutes: Routes = [
     { path: 'hostlistenerhostbindingexample', component: HostlistenerHostbindingExampleComponent },
     { path: 'inputpropertybindingexample', component: InputPropertyBindingExampleComponent },
     { path: 'structuraldirectiveexample', component: StructuralDirectiveExampleComponent },
+    { path: 'serviceintroduction', component: ServicesIntroductionComponent },
     // { path: 'weatherservice', component: WeatherDetailsComponent },
 ];
 

@@ -33,6 +33,8 @@ import { InputPropertyBindingExampleComponent } from './components/custom-direct
 import { CustomStructuralDirective } from './directives/custom-structural.directive';
 import { StructuralDirectiveExampleComponent } from './components/custom-directives-example/structural-directive-example.component';
 import { ServicesIntroductionComponent } from './components/services-introduction/services-introduction.component';
+import { SampleModule } from './modules/sample.module';
+import { SampleModuleExampleComponent } from './components/sample-module-example/sample-module-example.component';
 
 @NgModule({
   declarations: [
@@ -64,13 +66,15 @@ import { ServicesIntroductionComponent } from './components/services-introductio
     InputPropertyBindingExampleComponent,
     CustomStructuralDirective, // directive 
     StructuralDirectiveExampleComponent,
-    ServicesIntroductionComponent
+    ServicesIntroductionComponent,
+    SampleModuleExampleComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    SampleModule // module
   ],
   providers: [],
   bootstrap: [AppRootComponent]

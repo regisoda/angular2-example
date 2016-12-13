@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
@@ -35,6 +35,11 @@ import { StructuralDirectiveExampleComponent } from './components/custom-directi
 import { ServicesIntroductionComponent } from './components/services-introduction/services-introduction.component';
 import { SampleModule } from './modules/sample.module';
 import { SampleModuleExampleComponent } from './components/sample-module-example/sample-module-example.component';
+import { PipeExampleComponent } from './components/pipe-example/pipe-example.component';
+import { PipeAsyncExampleComponent } from './components/pipe-async-example/pipe-async-example.component';
+import { CamelCasePipe } from './pipes/camel-case.pipe';
+import { SettingsService } from './services/settings.service';
+
 
 @NgModule({
   declarations: [
@@ -67,7 +72,10 @@ import { SampleModuleExampleComponent } from './components/sample-module-example
     CustomStructuralDirective, // directive 
     StructuralDirectiveExampleComponent,
     ServicesIntroductionComponent,
-    SampleModuleExampleComponent
+    SampleModuleExampleComponent,
+    PipeExampleComponent,
+    CamelCasePipe,
+    PipeAsyncExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +84,19 @@ import { SampleModuleExampleComponent } from './components/sample-module-example
     routing,
     SampleModule // module
   ],
-  providers: [],
+  providers: [
+    // {
+    //   provide: LOCALE_ID,
+    //   useValue: 'pt-BR'
+    //   // useValue: 'en-US'
+    // }
+    SettingsService,
+    {
+      provide: LOCALE_ID,
+      deps: [SettingsService],
+      useFactory: (settingsService) => settingsService.getLocale()
+    }
+  ],
   bootstrap: [AppRootComponent]
 })
 export class AppModule { }

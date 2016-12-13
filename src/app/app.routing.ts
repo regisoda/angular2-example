@@ -21,6 +21,8 @@ import { InputPropertyBindingExampleComponent } from './components/custom-direct
 import { StructuralDirectiveExampleComponent } from './components/custom-directives-example/structural-directive-example.component';
 import { ServicesIntroductionComponent } from './components/services-introduction/services-introduction.component';
 import { SampleModuleExampleComponent } from './components/sample-module-example/sample-module-example.component';
+import { PipeExampleComponent } from './components/pipe-example/pipe-example.component';
+import { PipeAsyncExampleComponent } from './components/pipe-async-example/pipe-async-example.component';
 
 
 const appRoutes: Routes = [
@@ -43,6 +45,8 @@ const appRoutes: Routes = [
     { path: 'structuraldirectiveexample', component: StructuralDirectiveExampleComponent },
     { path: 'serviceintroduction', component: ServicesIntroductionComponent },
     { path: 'samplemoduleexample', component: SampleModuleExampleComponent },
+    { path: 'pipesexample', component: PipeExampleComponent },
+    { path: 'pipesasyncexample', component: PipeAsyncExampleComponent },
     // { path: 'weatherservice', component: WeatherDetailsComponent },
 ];
 

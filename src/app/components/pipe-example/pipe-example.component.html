@@ -1,0 +1,28 @@
+<section>
+
+  <article>
+
+    <div class="jumbotron">
+      <div class="container">
+
+        <h3>Pipes Examples</h3>
+        <br>
+
+        <div *ngFor="let book of books">
+          <h4>{{ book.name | uppercase }}</h4>
+          <p>Name: {{ book.name | camelCase }}</p>
+          <p>Rating: {{ book.rating | number:'1.1-1' }}</p>
+          <p>Pages: {{ book.pages | number }}</p>
+          <p>Price: {{ book.price | currency:'BRL':true }}</p>
+          <p>Date: {{ book.releaseDate | date: 'MM/yyyy' }} </p>
+          <p>Release Date: {{ book.releaseDate | date }}</p>
+        </div>
+
+        <br>
+        <br> {{ books | json}}
+
+
+      </div>
+    </div>
+  </article>
+</section>

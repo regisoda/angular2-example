@@ -15,17 +15,20 @@
 
         <li><a routerLink="/">Home</a></li>
 
-        <li class="dropdown">
+        <li class="dropdown" routerLinkActive="active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Syntaxes<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a routerLink="/databinding">Property Binding / Interpolation</a></li>
+            <li><a routerLink="databinding">Property Binding / Interpolation</a></li>
             <li><a routerLink="/twowaybinding">Two Way Binding</a></li>
             <li><a routerLink="/eventbinding">Event Binding</a></li>
             <li><a routerLink="/classstylebinding">Class and Style Binding</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a routerLink="/pipesexample">Pipes Examples</a></li>
+            <li><a routerLink="/pipesasyncexample">Pipes Async</a></li>
           </ul>
         </li>
 
-        <li class="dropdown">
+        <li class="dropdown" routerLinkActive="active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Directives<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a routerLink="/ngifdirective">*ngIf</a></li>
@@ -38,7 +41,7 @@
           </ul>
         </li>
 
-        <li class="dropdown">
+        <li class="dropdown" routerLinkActive="active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Components<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a routerLink="/inputpropertyexample">Input Property Interaction</a></li>
@@ -48,7 +51,7 @@
           </ul>
         </li>
 
-        <li class="dropdown">
+        <li class="dropdown" routerLinkActive="active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom Directives<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a routerLink="attributedirectiveexample">Attribute Directive</a></li>
@@ -59,7 +62,7 @@
           </ul>
         </li>
 
-        <li class="dropdown">
+        <li class="dropdown" routerLinkActive="active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a routerLink="serviceintroduction">Introduction of Services</a></li>
@@ -68,14 +71,14 @@
           </ul>
         </li>
 
-        <li class="dropdown">
+        <li class="dropdown" routerLinkActive="active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a routerLink="samplemoduleexample">Introduction of Modules</a></li>
           </ul>
         </li>
 
-        <li class="active"><a href="https://angular.io/docs/ts/latest/" target="_blank">DOCS</a></li>
+        <li routerLinkActive="active"><a href="https://angular.io/docs/ts/latest/" target="_blank">DOCS</a></li>
 
       </ul>
     </div>
